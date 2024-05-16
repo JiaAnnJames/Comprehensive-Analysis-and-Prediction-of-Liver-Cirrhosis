@@ -52,11 +52,11 @@ def test():
 @app.route("/predict", methods=["GET","POST"])
 def predict():
     if request.method == "POST":
-        drug_selected = request.form['drug']
-        drug = -1.0
-        if drug_selected == "Normal":
+        alt_selected = request.form['alt']
+        alt = -1.0
+        if alt_selected == "Normal":
             drug = 0.0
-        elif drug_selected == "Abnormal":
+        elif alt_selected == "Abnormal":
             drug = 1.0
         age = float(request.form['age']) #range: (26.0,78.0)
         gender = request.form['sex']
@@ -100,9 +100,9 @@ def predict():
         tryglycerides = float(request.form['tryglycerides']) #range: (45.875,176.875)
         platelets = float(request.form['platelets']) #range: (62.0,503.75)
         prothrombin = float(request.form['prothrombin']) #range: (9.0,12.75)
-        accuracy = 85.531
+
         X_test = scaler.transform([[
-                drug,
+                alt,
                 age,
                 sex,
                 ascites,
