@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liver Cirrhosis Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    
+      text-align: center;
+      background-color: #7ca0d3;
+    }
+   /* .nav {
+      display: flex;
+      margin-left: 0px;
+      justify-content:space-between;
+      background-color: #780233;
+      padding: 1rem;
+      width: 100%;
+      height:90px;
+      box-sizing: border-box; 
+      position: fixed; 
+      top: 0; 
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }*/
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #780233;
+      padding: 1rem;
+      width: 100%;
+      height:100px;
+      box-sizing: border-box; /* Ensures padding is included in the width calculation */
+      position: fixed; /* Fixes the navigation panel at the top of the page */
+      top: 0; /* Positions the navigation panel at the very top */
+      color: white;
+    }
+
+    .nav .title {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    .nav .links {
+      display: flex;
+      padding-left: 10%;
+    }
+
+    .nav .links a {
+      color: white;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .nav .links a:hover {
+      text-decoration: underline;
+    }
+
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      width: 1700px;
+      height: 600px;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: grey;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 2rem;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+.content {
+      width: 70%;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f1f1f1;
+      padding: 1rem;
+      font-size:20px;
+    }
+
+    .content .stage {
+      width: 10%;
+      background-color: #780233;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      padding: 1rem;
+      color:white;
+      box-sizing: border-box;
+      font-size: 25px;
+    }
+
+    .content .details {
+      width: 90%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: #780233;
+      font-size: 50px;
+    }
+
+    p {
+      color: #780233;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="title">Liver Cirrhosis Stage Prediction</div>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/stage">Stages</a>
+      <a href="/test">Test Details</a>
+      <a href="/home">Start Test</a>
+    </div>
+  </div>
+
+<br><br><br><br><br>
+<div class="content">
+    <div class="stage">Stage 1</div>
+    <div class="details"><p>Description: In this early stage, the liver is damaged but still able to perform most of its functions. The body compensates for the damage, and there are often few or no symptoms.</p><p>Symptoms: Patients might experience mild symptoms or none at all. Symptoms, if present, can include fatigue, mild abdominal discomfort, and occasional swelling of the legs or abdomen.</p></div>
+  </div>
+
+  <div class="content">
+    <div class="stage">Stage 2</div>
+    <div class="details"><p>Description: At this stage, the liver can no longer compensate for the damage, and its function is significantly impaired. Complications and symptoms become more apparent and severe.</p><p>Symptoms: Common symptoms and complications include jaundice (yellowing of the skin and eyes), ascites (accumulation of fluid in the abdomen), variceal bleeding (bleeding from enlarged veins in the esophagus or stomach), hepatic encephalopathy (confusion, altered level of consciousness), and significant swelling in the legs and abdomen.</p></div>
+  </div>
+
+  <div class="content">
+    <div class="stage">Stage 3</div>
+    <div class="details"><p>Description: This is the most severe stage of cirrhosis, where the liver is extensively scarred and its functions are critically impaired. Patients in this stage often require liver transplantation for survival.</p><p>Symptoms: Symptoms are severe and can include persistent jaundice, severe ascites, frequent infections, kidney failure, severe hepatic encephalopathy, and other life-threatening complications. The quality of life is significantly reduced, and medical intervention is necessary to manage symptoms and complications.</p></div>
+  </div>
+
+</body>
+</html>

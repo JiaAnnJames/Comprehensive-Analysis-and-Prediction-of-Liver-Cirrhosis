@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liver Cirrhosis Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    
+      text-align: center;
+      background-color: #7ca0d3;
+    }
+   /* .nav {
+      display: flex;
+      margin-left: 0px;
+      justify-content:space-between;
+      background-color: #780233;
+      padding: 1rem;
+      width: 100%;
+      height:90px;
+      box-sizing: border-box; 
+      position: fixed; 
+      top: 0; 
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }*/
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #780233;
+      padding: 1rem;
+      width: 100%;
+      height:100px;
+      box-sizing: border-box; /* Ensures padding is included in the width calculation */
+      position: fixed; /* Fixes the navigation panel at the top of the page */
+      top: 0; /* Positions the navigation panel at the very top */
+      color: white;
+    }
+
+    .nav .title {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    .nav .links {
+      display: flex;
+      padding-left: 10%;
+    }
+
+    .nav .links a {
+      color: white;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .nav .links a:hover {
+      text-decoration: underline;
+    }
+
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      width: 1700px;
+      height: 600px;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: grey;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 2rem;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+
+    a {
+      text-decoration: none;
+      color: #780233;
+      font-size: 50px;
+    }
+
+    p {
+      color: #780233;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="title">Liver Cirrhosis Stage Prediction</div>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/stage">Stages</a>
+      <a href="/test">Test Details</a>
+      <a href="/home">Start Test</a>
+    </div>
+  </div>
+
+<br><br><br><br>,br>
+  <img src="{{ url_for('static', filename='images/Liver_.jpg') }}" alt="Liver Cirrhosis Test Image">
+  <br><a href="/home">Click Here to test!</a>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liver Cirrhosis Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #7ca0d3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #780233;
+      padding: 1rem;
+      width: 100%;
+      height: 100px;
+      box-sizing: border-box; /* Ensures padding is included in the width calculation */
+      position: fixed; /* Fixes the navigation panel at the top of the page */
+      top: 0; /* Positions the navigation panel at the very top */
+      color: white;
+      z-index: 1000; /* Ensures the nav stays on top */
+    }
+
+    .nav .title {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    .nav .links {
+      display: flex;
+      padding-left: 10%;
+    }
+
+    .nav .links a {
+      color: white;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .nav .links a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin: 8rem auto 2rem auto; /* Adjusted margin to account for fixed nav */
+      width: 1700px;
+      height: 600px;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: grey;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 2rem;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+
+    .content {
+      width: 70%;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f1f1f1;
+      padding: 1rem;
+    }
+
+    .content .stage {
+      width: 10%;
+      background-color: #780233;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      padding: 1rem;
+      color: white;
+      box-sizing: border-box;
+    }
+
+    .content .details {
+      width: 90%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .table-container {
+      width: 70%;
+      margin: 2rem auto;
+      background-color: #f1f1f1;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto; /* Center the table */
+    }
+
+    table, th, td {
+      border: 1px solid #780233;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #780233;
+      color: white;
+    }
+
+    td {
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: #780233;
+      font-size: 50px;
+    }
+
+    p {
+      color: #780233;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="title">Liver Cirrhosis Stage Prediction</div>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/home">Stages</a>
+      <a href="/test">Test Details</a>
+      <a href="/home">Start Test</a>
+    </div>
+  </div>
+<br><br><br><br><br>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Test Name</th>
+          <th>Description</th>
+          <th>Normal Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 15 rows of data -->
+        <!-- Adjust content as needed -->
+        <tr>
+          <td>Bilrubin</td>
+          <td>Presence of bilirubin in blood</td>
+          <td>0.3 - 1.2 mg/dL</td>
+        </tr>
+        <tr>
+          <td>Albumin</td>
+          <td>Albumin levels in the blood</td>
+          <td>3.5 - 5.0 g/dL</td>
+        </tr>
+        <tr>
+          <td>Cholestrol</td>
+          <td>Cholesterol levels in the blood</td>
+          <td>< 200 mg/dL</td>
+        </tr>
+        <tr>
+          <td>Copper</td>
+          <td>Copper levels in the blood</td>
+          <td>70 - 140 mcg/dL</td>
+        </tr>
+        <tr>
+          <td>Alk_Phos</td>
+          <td>Alkaline phosphatase levels in the blood</td>
+          <td>40 - 130 IU/L</td>
+        </tr>
+        <tr>
+          <td>SGOT</td>
+          <td>Serum Glutamic Oxaloacetic Transaminase levels in the blood</td>
+          <td>8 - 33 IU/L</td>
+        </tr>
+        <tr>
+          <td>Triglycerides</td>
+          <td>Triglyceride levels in the blood</td>
+          <td>< 150 mg/dL</td>
+        </tr>
+        <tr>
+          <td>Platelets</td>
+          <td>Platelet count in the blood</td>
+          <td>150,000 - 450,000 per microliter</td>
+        </tr>
+        <tr>
+          <td>Prothrombin</td>
+          <td>Prothrombin time, a measure of blood clotting</td>
+          <td>11 - 13.5 seconds</td>
+        </tr>
+        <tr>
+          <td>Ascites</td>
+          <td>Presences of fluid accumulation in the abdominal cavity</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Hepatomegaly</td>
+          <td>Enlargement of liver</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Spiders</td>
+          <td>Presence or absence of spider angiomas, which are small blood vessels near the skin surface.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Edema</td>
+          <td>Presence or absence of swelling, typically in the legs, due to fluid retention</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ALT</td>
+          <td>Alanine Aminotransferase test measures the level of ALT enzyme in the blood, indicating liver health and function.</td>
+          <td></td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+s

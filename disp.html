@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #7ca0d3;
+            background-image: 'images\Liver.jpg';
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color:white;
+                    }
+        th, td {
+            border: 1px solid #7472e7;
+            text-align: center;
+            padding: 8px;
+            font-size: 30px;
+        }
+        th {
+            background-color: #66a2ec;
+            font-style: italic;
+            font-size: large;
+            font-size: 30px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result Table</h1>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Value</th>
+                
+            </tr>
+            
+            {% for key, value in data.items() %}
+               <tr>
+                    <td> {{ key }} </td>
+                    <td> {{ value }} </td>
+               </tr>
+            {% endfor %} 
+        </table>   
+</body>
+</html>
